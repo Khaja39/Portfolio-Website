@@ -6,8 +6,7 @@ import downLoad from "../assets/download.png";
 import resume from "../assets/resume.png";
 import phone from "../assets/phone-call.png";
 import mail from "../assets/gmail.png";
-import myResumePdf from "../assets/Resume.pdf";
-import myResumePdf2 from "../assets/Resume.pdf";
+
 function Dashboard() {
   const name = "Shaik Khaja Moinuddin";
   const skill = "Full Stack [PERN & MERN] Web Developer";
@@ -38,7 +37,7 @@ function Dashboard() {
       text-purple-700 text-sm font-bold 
       hover:text-purple-800 transition-colors"
           >
-            <img src={resume} alt="View" className="w-4 h-4" />
+            <img src="/resume.pdf" alt="View" className="w-4 h-4" />
             View Resume
           </a>
 
@@ -51,7 +50,7 @@ function Dashboard() {
     rel="noopener noreferrer"
     className="flex items-center gap-2 bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-purple-800 transition-colors shadow-sm cursor-pointer"
   >
-              <img src={downLoad} alt="View" className="w-4 h-4 brightness-0 invert" />Download Resume</a>
+              <img src="/resume.pdf" alt="View" className="w-4 h-4 brightness-0 invert" />Download Resume</a>
         </div>
       </div>
       {/* --- Middle Row: Photo & Contact Info --- */}
