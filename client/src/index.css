@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .content-box {
+    @apply p-6 rounded-xl bg-white
+    border-2 border-transparent 
+    shadow-md
+    transition-all duration-300 ease-in-out
+    hover:shadow-xl hover:border-blue-500 hover:-translate-y-1;
+  }
+  .side-hdng{
+    @apply font-extrabold mx-2 text-lg mb-4;
+  }
+  .side-hdng2{
+    @apply font-bold my-2  ;
+  }
+  .lst-spc{
+    @apply flex flex-col gap-4;
+  }
+  .inline-html{
+    @apply text-gray-700 text-lg [&>b]:font-bold [&>b]:text-black;
+  }
+  .btn-pjt{
+    @apply bg-blue-500           /* Main background color */
+  border-2              /* Border width */
+  border-blue-700       /* Border color (darker than bg) */
+  text-white            /* Text color */
+  font-bold             /* Bold text */
+  py-2 px-6             /* Padding: Top/Bottom 8px, Left/Right 24px */
+  rounded-lg            /* Rounded corners */
+  hover:bg-blue-600     /* Hover effect */
+  transition-all        /* Smooth animation */
+  }
+}
+
+
