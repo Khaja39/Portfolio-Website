@@ -10,7 +10,7 @@ function Contact() {
       </div>
       <div className="content-box">
         <div className="flex flex-col md:flex-row justify-center gap-6 items-center ">
-          <a href="www.linkedin.com/in/shaik-khaja-moinuddin-b99a3b202">
+          <a href="https://www.linkedin.com/in/khaja-developer/">
             <img src={linkedInIcon} alt="Description" className="w-24 h-auto"/>
           </a>
           <a href="https://github.com/Khaja39">
