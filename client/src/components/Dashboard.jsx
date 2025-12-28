@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import myImage from "../assets/pic.jpg";
 import Navbar from "./navBar.jsx";
-import NavLinks from "./navLinks.jsx";
 import downLoad from "../assets/download.png";
 import resume from "../assets/resume.png";
+import MyResumePDF from "../assets/resume.pdf";
+import MyResumePDF2 from "../assets/resume.pdf";
 import phone from "../assets/phone-call.png";
 import mail from "../assets/gmail.png";
 
@@ -28,26 +29,26 @@ function Dashboard() {
           {/* View Resume Link */}
 
           <a
-            href="/resume.pdf" // Link to the same PDF import
+            href={MyResumePDF} // Link to the same PDF import
             target="_blank" // Opens in a new tab
             rel="noopener noreferrer" // Security best practice for new tabs
             className="group flex items-center gap-2 
       text-purple-700 text-sm font-bold 
       hover:text-purple-800 transition-colors"
           >
-            <img src="/resume.pdf" alt="View" className="w-4 h-4" />
+            <img src={resume} alt="View" className="w-4 h-4" />
             View Resume
           </a>
 
           <a
-            href="/resume.pdf" // Assuming this is the file you want to download
+            href={MyResumePDF2} // Assuming this is the file you want to download
             download="Shaik_Khaja_Resume"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-purple-800 transition-colors shadow-sm cursor-pointer"
           >
             <img
-              src="/resume.pdf"
+              src={downLoad}
               alt="View"
               className="w-4 h-4 brightness-0 invert"
             />
